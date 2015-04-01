@@ -8,8 +8,9 @@ public class Settings {
     public Settings(int selectedDifficult, String playerName) {
         if (playerName.equalsIgnoreCase("Cheater")) {
             difficult = 0;
-        } else
+        } else {
             difficult = selectedDifficult;
+        }
         lightRadius = calculateLightRadius(selectedDifficult);
 
 
