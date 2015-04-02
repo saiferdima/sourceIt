@@ -39,7 +39,7 @@ public class Game {
     private static String getWritedPlayerName() {
         //TODO Implement logic to save player name entered from keyboard
 
-        String playerName = "Cheater";
+        String playerName = "Cheaterr";
         return playerName;
 
     }
@@ -47,7 +47,7 @@ public class Game {
     private static int getWritedPlayerdifficult() {
         //TODO Implement logic to save difficult entered from keyboard
 
-        int playerDifficult = 1;
+        int playerDifficult = 2;
         return playerDifficult;
 
     }

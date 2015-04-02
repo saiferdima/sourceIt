@@ -10,8 +10,15 @@ public class Map {
 
     }
 
-    public void createMap() {
-        //TODO Implement Map creation method
+    private Cell[][] createMap(int x, int y) {
+
+
+        return new Cell[x][y];
+
+    }
+
+    public Cell[][] getMaze() {
+        return createMap(mapSizeX, mapSizeY);
 
     }
 
