@@ -3,7 +3,7 @@ package game;
 public class Game {
 
     public static void main(String[] args) {
-        start();
+
         test();
         stop();
 
@@ -32,14 +32,14 @@ public class Game {
         int selectedDifficult = getWritedPlayerdifficult();
         mes.showMessage("Hello " + newPlayer.playerName + "\nYou select difficult = " + selectedDifficult);
         Settings newSettings = new Settings(selectedDifficult, writedPlayerName);
-
+        mes.showMessage("Light radius = " + newSettings.getLightRadius());
 
     }
 
     private static String getWritedPlayerName() {
         //TODO Implement logic to save player name entered from keyboard
 
-        String playerName = "defaultPlayerName";
+        String playerName = "Cheater";
         return playerName;
 
     }

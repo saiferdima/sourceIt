@@ -11,23 +11,32 @@ public class Settings {
         } else {
             difficult = selectedDifficult;
         }
-        lightRadius = calculateLightRadius(selectedDifficult);
+        lightRadius = calculateLightRadius(difficult);
 
+
+    }
+
+    public int getLightRadius() {
+        return lightRadius;
 
     }
 
     private int calculateLightRadius(int difficult) {
-        int calculatedlightRadius;
+        int calculatedLightRadius = 1;
         if (difficult == 0) {
-            calculatedlightRadius = 100;
+            calculatedLightRadius = 100;
         }
         if (difficult == 1) {
-            calculatedlightRadius = 2;
-        } else
-            calculatedlightRadius = 1;
-        return calculatedlightRadius;
+            calculatedLightRadius = 2;
+        }
+        return calculatedLightRadius;
     }
+
+
 }
+
+
+
 
 	
 
