@@ -1,13 +1,17 @@
 package game;
 
+/**
+ * @author PopazovDK
+ */
 public class Game {
 
     public static void main(String[] args) {
+        Messenger mes = new Messenger();
+        Map map = new Map(3, 3);
+        Cell[][] maze = map.getMaze();
+        map.displayAllCellInfo(maze);
 
-        test();
-        stop();
-
-
+        //   mes.showMessage(maze[0][0].getAllCells());
     }
 
     public static void start() {

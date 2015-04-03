@@ -1,6 +1,8 @@
 package game;
 
 
+import java.util.Random;
+
 public class Cell {
 
 
@@ -8,6 +10,15 @@ public class Cell {
     private boolean rightBorder;
     private boolean topBorder;
     private boolean bottomBorder;
+
+    public Cell() {
+        Random random = new Random();
+        leftBorder = random.nextBoolean();
+        rightBorder = random.nextBoolean();
+        topBorder = random.nextBoolean();
+        bottomBorder = random.nextBoolean();
+
+    }
 
 
     public void setLeftBorder(boolean leftBorder) {
@@ -41,4 +52,11 @@ public class Cell {
     public boolean isBottomBorder() {
         return bottomBorder;
     }
+
+    public String getAllCells() {
+        String cellBorders = "";
+        return cellBorders + "leftBorder = " + leftBorder + "\nrightBorder = " + rightBorder + "\ntopBorder = " + topBorder + "\nbottomBorder = " + bottomBorder + "\n";
+    }
+
+
 }
