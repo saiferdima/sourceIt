@@ -15,6 +15,7 @@ public class Launcher {
         DataBaseEmulator.sortEmployeeBySalaryAndName(employeeArray);
         Messager.printEmployeesData(employeeArray);
         System.out.println("First five names from list:");
+        System.out.println("First five names from list:");
         System.out.println(employeeArray[0].getName());
         System.out.println(employeeArray[1].getName());
         System.out.println(employeeArray[2].getName());
