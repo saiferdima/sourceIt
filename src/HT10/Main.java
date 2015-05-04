@@ -15,16 +15,12 @@ public class Main {
 		System.out.println(client1.getName()+"\nid= "+client1.getId());
 		System.out.println(client2.getName()+"\nid= "+client2.getId());
 		bank.addCredit(client1, account1, 1000);
-		System.out.println("account 1 after 1000 credit:");
-		System.out.println(account1.getAccountCurrentAmount());
+		account1.printAccountCurrentAmount();
 		bank.addAmount(client1, account1, 2000);
-		System.out.println("account 1 after 2000 amount");
-		System.out.println(account1.getAccountCurrentAmount());
+		account1.printAccountCurrentAmount();
 		bank.transfer(client1, account1, account2, 500);
-		System.out.println("account 1 after transfer 500");
-		System.out.println(account1.getAccountCurrentAmount());
-		System.out.println("account 2 after transfer 500");
-		System.out.println(account2.getAccountCurrentAmount());
+		account1.printAccountCurrentAmount();
+		account2.printAccountCurrentAmount();
 
 
 

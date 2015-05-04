@@ -50,7 +50,7 @@ public void addAmount(Client client, Account account,float amount){
 			if(amountValidation(accountFrom,amount)){
 			accountFrom.addAmount(-amount);
 			accountTo.addAmount(amount);
-			System.out.println("Transfer success");
+			System.out.println("Transfer from account "+accountFrom.getAccountId()+" to account "+accountTo.getAccountId()+" on amount = "+amount+" completed successful");
 			}
 			
 		}

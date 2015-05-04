@@ -27,6 +27,10 @@ public class Account {
 	public float getAccountCurrentAmount(){
 		return currentAmount;
 	}
+	
+	public void printAccountCurrentAmount(){
+	System.out.println("accountid "+accountId+"\nCurrentAmount = "+currentAmount);;
+	}
 
 
 	public void addAmount(float amount) {
