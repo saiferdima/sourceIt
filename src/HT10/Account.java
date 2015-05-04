@@ -14,6 +14,7 @@ public class Account {
 		this.clientId=client.getId();
 		this.accountId=Main.getCurrentAccounttId();
 		Main.increaceCurrentAccountId();
+		System.out.println("New account on name "+ownerName+" created successful with current amount "+currentAmount);
 		
 	}
 	
@@ -29,7 +30,7 @@ public class Account {
 	}
 	
 	public void printAccountCurrentAmount(){
-	System.out.println("accountid "+accountId+"\nCurrentAmount = "+currentAmount);;
+	System.out.println("\naccountid "+accountId+"\nCurrentAmount = "+currentAmount+"("+creditAmount+" credit amount)\n");;
 	}
 
 

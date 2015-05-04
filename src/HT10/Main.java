@@ -11,9 +11,7 @@ public class Main {
 		Client client2 = new Client("Petrov Petr Petrovich");
 		Bank bank = new Bank("JSC Horns & Hooves");
 		Account account1 = bank.openNewAccaunt(client1, 0);
-		Account account2 = bank.openNewAccaunt(client2, 0);
-		System.out.println(client1.getName()+"\nid= "+client1.getId());
-		System.out.println(client2.getName()+"\nid= "+client2.getId());
+		Account account2 = bank.openNewAccaunt(client2, 0);		
 		bank.addCredit(client1, account1, 1000);
 		account1.printAccountCurrentAmount();
 		bank.addAmount(client1, account1, 2000);
