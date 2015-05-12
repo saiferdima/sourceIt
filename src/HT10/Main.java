@@ -20,33 +20,21 @@ public class Main {
 		account1.printAccountCurrentAmount();
 		account2.printAccountCurrentAmount();
 
-
-
-		
-		
-		
-		
-		
-		
 	}
 	
-	public static int getCurrentClientId(){
-		
+	public static int getCurrentClientId(){		
 		return currentClientId;
 	}
 	
-	public static void increaceCurrentClientId(){
-		
+	public static void increaceCurrentClientId(){		
 		currentClientId=currentClientId+1;
 	}
 	
-	public static int getCurrentAccounttId(){
-		
+	public static int getCurrentAccounttId(){		
 		return currentAccountId;
 	}
 	
-	public static void increaceCurrentAccountId(){
-		
+	public static void increaceCurrentAccountId(){		
 		currentAccountId=currentAccountId+1;
 	}
 

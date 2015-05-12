@@ -10,8 +10,8 @@ public class TimeBasedEmployee extends Employee {
 
     public TimeBasedEmployee(String name) {
         super(name);
-        super.setSalary(calculateSalary());
-        super.setType(Settings.getTIME_BASED_EMPLOYEE_TYPE_ID());
+        setSalary(calculateSalary());
+        setType(Settings.getTIME_BASED_EMPLOYEE_TYPE_ID());
 
 
     }

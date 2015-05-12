@@ -8,7 +8,7 @@ public class Account {
 	private float creditAmount = 0;
 	private String ownerName = "noName";
 
-	public Account(Client client,float amount) {
+		Account(Client client,float amount) {
 		this.ownerName=client.getName();
 		this.currentAmount=amount;
 		this.clientId=client.getId();

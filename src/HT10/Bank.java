@@ -2,7 +2,7 @@ package HT10;
 
 public class Bank {
 	
-	public String bankName = "";
+	public String bankName;
 	
 	
 public Bank(String name){
