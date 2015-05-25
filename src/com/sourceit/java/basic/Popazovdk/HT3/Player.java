@@ -1,4 +1,4 @@
-package game;
+package com.sourceit.java.basic.Popazovdk.HT3;
 
 public class Player {
     public String playerName = "Undefined";
