@@ -12,13 +12,13 @@ public Bank(String name){
 	
 	
 	
-public	Account openNewAccaunt(Client client, float amount){
+public	Account openNewAccaunt(Client client, long amount){
 		Account accaunt = new Account(client, amount);
 		
 		return accaunt;
 	}
 
-public void addAmount(Client client, Account account,float amount){
+public void addAmount(Client client, Account account,long amount){
 	if(accountValidation(client,account)){
 		account.addAmount(amount);
 		System.out.println(client.getName()+" added  amount: "+amount+" to account "+account.getAccountId());
@@ -30,7 +30,7 @@ public void addAmount(Client client, Account account,float amount){
 }
 
 
-	public void addCredit(Client client, Account account,float amount){
+	public void addCredit(Client client, Account account,long amount){
 		if(accountValidation(client,account)){
 			account.addCreditAmount(amount);
 			account.addAmount(amount);
@@ -45,7 +45,7 @@ public void addAmount(Client client, Account account,float amount){
 		
 }
 	
-	public void transfer(Client clientFrom, Account accountFrom,Account accountTo,float amount){
+	public void transfer(Client clientFrom, Account accountFrom,Account accountTo,long amount){
 		if(accountValidation(clientFrom,accountFrom)){
 			if(amountValidation(accountFrom,amount)){
 			accountFrom.addAmount(-amount);
@@ -58,7 +58,7 @@ public void addAmount(Client client, Account account,float amount){
 		
 	}
 	
-	public void withdrawals(Client client , Account account,float amount){
+	public void withdrawals(Client client , Account account,long amount){
 		if(accountValidation(client, account)){
 			if(amountValidation(account, amount)){
 			account.addAmount(-amount);	

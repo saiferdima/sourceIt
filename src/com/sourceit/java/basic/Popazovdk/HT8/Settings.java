@@ -1,4 +1,4 @@
-package game.HT8;
+package com.sourceit.java.basic.Popazovdk.HT8;
 
 /**
  * Created with IntelliJ IDEA.

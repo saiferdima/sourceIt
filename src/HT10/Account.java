@@ -4,11 +4,11 @@ public class Account {
 	
 	private int clientId = 0;
 	private int accountId = 0;
-	private float currentAmount = 0;
-	private float creditAmount = 0;
+	private long currentAmount = 0;
+	private long creditAmount = 0;
 	private String ownerName = "noName";
 
-		Account(Client client,float amount) {
+		Account(Client client,long amount) {
 		this.ownerName=client.getName();
 		this.currentAmount=amount;
 		this.clientId=client.getId();
@@ -34,12 +34,12 @@ public class Account {
 	}
 
 
-	public void addAmount(float amount) {
+	public void addAmount(long amount) {
 		currentAmount=currentAmount+amount;
 		
 	}
 	
-	public void addCreditAmount(float amount) {
+	public void addCreditAmount(long amount) {
 		creditAmount=creditAmount+amount;
 		
 	}
