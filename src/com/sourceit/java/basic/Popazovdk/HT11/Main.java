@@ -1,18 +1,17 @@
 package com.sourceit.java.basic.Popazovdk.HT11;
 
+
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
-	MyTextStatistic mts = new MyTextStatistic(Info.someText);
-	System.out.println(Info.someText);
-	System.out.println(mts.getCharCount('l'));
-	System.out.println(mts.getCharFrequency('l'));
-	System.out.println(mts.getChars());
-	System.out.println(mts.words());
-	System.out.println(mts.getMostPopularCharCount());
-	System.out.println(mts.getLeastPopularCharCount());
-	System.out.println(mts.getCharByCount(9));
+	MyTextStatistic mts = new MyTextStatistic(FileEditor.read(Info.FILE_NAME));
+	StringBuffer sb = new StringBuffer();
+	BuildStatistic bs = new BuildStatistic();
+	sb.append(bs.buildStatistic(mts,'l'));
+	sb.append(FileEditor.read(Info.FILE_NAME));
+	String result = sb.toString();
+	FileEditor.write(Info.FILE_NAME, result);
 	
 
 	

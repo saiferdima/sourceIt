@@ -1,7 +1,6 @@
 package com.sourceit.java.basic.Popazovdk.HT11;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 
@@ -117,4 +116,6 @@ Map<Character,Integer> treeMap = new TreeMap<Character,Integer>();
 	}
 		return charArray;
 	}
+	
+	
 }
