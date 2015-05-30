@@ -70,7 +70,7 @@ Map<Character,Integer> treeMap = new TreeMap<Character,Integer>();
 
 	public List<String> words() {
 	String	tempText = myText;
-	String[] strings = tempText.replaceAll(" ", "").split("\\n");
+	String[] strings = tempText.split("\\n");
 	for(int i =0; i<strings.length;i++){
 		;
 		arrayStringList.add(strings[i]/*.replaceAll("\\W", "")*/);
