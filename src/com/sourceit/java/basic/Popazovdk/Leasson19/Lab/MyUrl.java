@@ -18,6 +18,7 @@ public	MyUrl(String url){
 	    BufferedReader br;
 	    String line;
 
+
 	    try {
 	    	myUrl = new URL(url);
 	        is = myUrl.openStream();
