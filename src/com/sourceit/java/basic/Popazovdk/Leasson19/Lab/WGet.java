@@ -110,13 +110,16 @@ public class WGet {
 
     private static String getAllLinksFromText(String html) {
         String line = "";
-        if (!html.contains("<a")) {
+        String searchFrom = "\"http";
+        String searchTo = "\"";
+        if (!html.contains(searchFrom)) {
             return "Can't find any URLs";
         }
         StringBuilder sb = new StringBuilder();
-        while (html.contains("<a href=")) {
-            Integer startIndex = html.indexOf("http");
-            Integer stopIndex = html.indexOf("\"", html.indexOf("http"));
+        System.out.println("List of URLs:");
+        while (html.contains(searchFrom)) {
+            Integer startIndex = html.indexOf(searchFrom) + 1;
+            Integer stopIndex = html.indexOf(searchTo, startIndex + 1);
 
             line = html.substring(startIndex, stopIndex);
             sb.append(line);
