@@ -13,7 +13,7 @@ public class WGet {
     static BufferedReader br;
     public static String stringUrl = "No Url";
 
-    public static final String[] COMMANDS = {"Save page", "Display title", "Find a word", "List all URL's on the page (Betahttp://vk.com/)", "Exit programm"};
+    public static final String[] COMMANDS = {"Save page", "Display title", "Find a word", "List all URL's on the page (Beta)", "Exit programm"};
     public static final String FILE_NAME = "D://DL/WebPage.html";
 
     public static void main(String[] args) throws MalformedURLException {
